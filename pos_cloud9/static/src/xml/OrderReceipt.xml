@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="pos_cloud9.OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        <!-- <xpath expr="//div[contains(text(), 'TOTAL')]" position="before">
+            <t t-if="env.pos.tipAmt">
+                <div class="pos-receipt-amount">
+                    TIP
+                    <span t-esc="env.pos.format_currency(env.pos.tipAmt*0.01)" class="pos-receipt-right-align"/>
+                </div>
+            </t>
+        </xpath>     -->
+        
+        <xpath expr="//t[@t-foreach='receipt.paymentlines']" position="inside">
+            <t t-if="line.cloud9_medium">
+                <div class="pos-receipt-left-padding">
+                    <span>Medium: </span>
+                    <span>
+                        <t t-esc="line.cloud9_medium" />
+                    </span>
+                </div>
+            </t>
+            <t t-if="line.cloud9_brand">
+                <div class="pos-receipt-left-padding">
+                    <span>Brand: </span>
+                    <span>
+                        <t t-esc="line.cloud9_brand" />
+                    </span>
+                </div>
+            </t>
+            <t t-if="line.cloud9_authcode">
+                <div class="pos-receipt-left-padding">
+                    <span>Approval Code: </span>
+                    <span>
+                        <t t-esc="line.cloud9_authcode" />
+                    </span>
+                </div>
+            </t>            
+            <t t-if="line.cloud9_cardnumber">
+                <div class="pos-receipt-left-padding">
+                    <span>Card Number: </span>
+                    <span>
+                        <t t-esc="line.cloud9_cardnumber" />
+                    </span>
+                </div>
+            </t>                                              
+        </xpath>
+    </t>
+
+</templates>
