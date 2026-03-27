@@ -4,7 +4,7 @@
     'version': '18.0.1.0.0',
     'category': 'Sales/Point of Sale',
     'summary': 'Cloud9 POS Payment Gateway for Odoo (Community & Enterprise) – Works with most processors',
-    'description': 'Accept payments through the Cloud9 gateway in Odoo POS. Supports Odoo Community Edition, remote payment workflows, and processor-flexible deployment options.',
+    'description': 'Cloud9 Payment Gateway integration for Odoo POS. Accept payments, run tabs, and support multiple processors. Fully compatible with Odoo Community and Enterprise editions. Ideal for clubs, restaurants, and multi-terminal environments.',
     'author': 'C9PG',
     'website': 'https://c9pg.com',
     'license': 'LGPL-3',
