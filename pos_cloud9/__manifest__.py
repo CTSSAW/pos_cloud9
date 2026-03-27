@@ -41,6 +41,7 @@
 <body>
   <div class="wrap">
     <div class="hero">
+      <img src="payment_hero.png" alt="Cloud9 payment gateway for Odoo POS"/>
       <div class="hero-copy">
         <h1>Cloud9 Payment Gateway for Odoo POS</h1>
         <p class="lead">Accept payments in-store, online, and remotely with a processor-agnostic gateway built for flexibility, visibility, and scale.</p>
