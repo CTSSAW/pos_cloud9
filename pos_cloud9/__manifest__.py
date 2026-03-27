@@ -3,7 +3,7 @@
     'name': 'Cloud9 POS Payment Gateway (Odoo Community Compatible)',
     'version': '18.0.1.0.0',
     'category': 'Sales/Point of Sale',
-    'summary': 'POS Payment Gateway — Bring yours processor or we'll help you choose (Community & Enterprise). Elavon, TSYS, Global, Nuvei, and more',
+    'summary': 'POS Payment Gateway — Bring yours processor or we can help you choose (Community & Enterprise). Elavon, TSYS, Global, Nuvei, and more',
     'description': 'Cloud9 Payment Gateway integration for Odoo POS. Accept payments, run tabs, and support multiple processors. Fully compatible with Odoo Community and Enterprise editions. Ideal for clubs, restaurants, and multi-terminal environments.',
     'author': 'C9PG',
     'website': 'https://c9pg.com',
