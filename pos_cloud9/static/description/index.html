@@ -8,7 +8,8 @@
     body { font-family: Arial, Helvetica, sans-serif; color:#243447; line-height:1.6; margin:0; padding:0; background:#ffffff; }
     .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
     .support-top { text-align: right; margin-bottom: 20px; }
-    .support-top img { max-width: 250px; width: 100%; cursor: pointer; }
+    .support-top a { display: inline-block; }
+    .support-top img { max-width: 200px; width: 100%; cursor: pointer; }
     .hero { border:1px solid #d9e2ec; border-radius:12px; overflow:hidden; margin-bottom:28px; box-shadow:0 2px 10px rgba(0,0,0,0.04); }
     .hero img { width:100%; display:block; }
     .hero-copy { padding:24px; background:#f7fbff; }
@@ -23,17 +24,26 @@
     .cta-secondary { background:#28a745; }
     .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
     .card { border:1px solid #d9e2ec; border-radius:12px; padding:20px; background:#fff; box-shadow:0 1px 6px rgba(0,0,0,0.03); }
-    .feature-list { columns:2; margin:0; padding-left:18px; }
+    .feature-list { columns:2; -webkit-columns:2; -moz-columns:2; margin:0; padding-left:18px; }
     .feature-list li, .checklist li { margin-bottom:8px; }
     .checklist { margin:0; padding-left:18px; }
     .image-card { border:1px solid #d9e2ec; border-radius:12px; overflow:hidden; background:#fff; }
     .image-card img { width:100%; display:block; }
     .caption { padding:12px 16px; font-size:14px; color:#536171; }
+    .highlight { background:#f8fbfe; border-left:4px solid #1769aa; padding:14px 16px; border-radius:6px; }
     .contact { background:#174a7c; color:#fff; border-radius:12px; padding:20px; }
     .contact a { color:#fff; }
     .small { font-size:14px; color:#536171; }
+    .hero-buttons { margin-top:16px; }
     .support-bottom { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #d9e2ec; }
-    .support-bottom img { max-width: 250px; width: 100%; cursor: pointer; }
+    .support-bottom a { display: inline-block; }
+    .support-bottom img { max-width: 200px; width: 100%; cursor: pointer; }
+    @media (max-width: 760px) {
+      .grid2 { grid-template-columns:1fr; }
+      .feature-list { columns:1; }
+      h1 { font-size:28px; }
+      .support-top { text-align: center; }
+    }
   </style>
 </head>
 <body>
@@ -50,12 +60,20 @@
         <h1>Cloud9 Payment Gateway for Odoo POS</h1>
         <p class="lead">Accept payments in-store, online, and remotely with a processor-agnostic gateway built for flexibility, visibility, and scale.</p>
         <p><strong>Works with Odoo Community Edition.</strong> No Odoo Enterprise dependency required.</p>
+
         <div>
           <span class="pill">Odoo 18 Community Ready</span>
           <span class="pill">Processor Agnostic</span>
           <span class="pill">POS + Portal + Remote Pay</span>
           <span class="pill">Enterprise Features</span>
         </div>
+
+        <div class="hero-buttons">
+          <a class="cta" href="https://zfrmz.com/aMN77NbUY7cX6U7AUGf5" target="_blank" rel="noopener noreferrer">Free Evaluation</a>
+          <a class="cta cta-secondary" href="https://zfrmz.com/aMN77NbUY7cX6U7AUGf5" target="_blank" rel="noopener noreferrer">Request Support</a>
+        </div>
+
+        <p class="small" style="margin-top:14px;">Need help with setup, support, or processor options? Use the support button above to contact our team.</p>
       </div>
     </div>
 
@@ -101,30 +119,39 @@
     <div class="grid2">
       <div class="image-card">
         <img src="main_dashboard.png" alt="Cloud9 transaction dashboard"/>
-        <div class="caption"><strong>Back-office visibility:</strong> review transactions, statuses, and detailed payment data.</div>
+        <div class="caption"><strong>Back-office visibility:</strong> review transactions, statuses, and detailed payment data from a Cloud9-style dashboard.</div>
       </div>
       <div class="image-card">
-        <img src="member_portal.png" alt="Cloud9 member portal"/>
-        <div class="caption"><strong>Member Portal &amp; virtual payments:</strong> securely collect payments online.</div>
+        <img src="member_portal.png" alt="Cloud9 member portal and one-time payment screen"/>
+        <div class="caption"><strong>Member Portal &amp; virtual payments:</strong> securely collect payments through a hosted portal or one-time payment page.</div>
       </div>
     </div>
 
     <div class="grid2" style="margin-top:24px;">
       <div class="card">
         <h3>Member Portal Video</h3>
+        <p>The Cloud9 Gateway includes a Member Portal that can be added to an email or website by linking it to a merchant account configured on the gateway. This gives merchants a secure way to collect and manage payments online.</p>
+        <p>A one-time virtual payment page can also be sent by email for remote payment collection. When a payment is captured, the merchant can receive an email notification for immediate visibility.</p>
         <p><a class="cta" href="https://workdrive.zohoexternal.com/external/40bc95c61e54d8b1a0dceb86c3adc23ce013287e50027efd8a05b52bf432535e" target="_blank" rel="noopener noreferrer">Watch Member Portal Video</a></p>
       </div>
       <div class="card">
         <h3>Free merchant account evaluation</h3>
-        <p><a class="cta" href="https://zfrmz.com/aMN77NbUY7cX6U7AUGf5" target="_blank" rel="noopener noreferrer">Submit your statement for evaluation</a></p>
+        <p>Not sure whether you are getting the best processing rates? Send us a recent merchant statement and we will provide a free, no-obligation evaluation that shows where you may be able to save money or improve your setup.</p>
+        <p><a class="cta" href="https://zfrmz.com/aMN77NbUY7cX6U7AUGf5" target="_blank" rel="noopener noreferrer">Submit your statement here for a free evaluation</a></p>
+        <p class="small">Works from phone, tablet, or desktop.</p>
+        <p style="text-align:center; margin-top:16px;">
+          <img src="qr_code.png" alt="QR code for free merchant account evaluation form" style="max-width:200px; width:100%; border:1px solid #d9e2ec; padding:10px; background:#fff; border-radius:8px;"/>
+        </p>
       </div>
     </div>
 
     <h2>Support</h2>
     <div class="contact">
-      <p><strong>Need help?</strong></p>
-      <p>Email: <a href="mailto:support@creditlinets.com">support@creditlinets.com</a><br/>
-      Phone: <a href="tel:8136003225">813-600-3225</a></p>
+      <p><strong>Need help getting started or reviewing processor options?</strong></p>
+      <p>
+        Email: <a href="mailto:support@creditlinets.com">support@creditlinets.com</a><br/>
+        Phone: <a href="tel:8136003225">813-600-3225</a>
+      </p>
     </div>
 
     <div class="support-bottom">
