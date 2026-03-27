@@ -4,135 +4,171 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Cloud9 Payment Gateway for Odoo POS</title>
-  <style>
-    body { font-family: Arial, Helvetica, sans-serif; color:#243447; line-height:1.6; margin:0; padding:0; background:#ffffff; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
-    .hero { border-radius:12px; overflow:hidden; margin-bottom:28px; }
-    .hero img { width:100%; display:block; }
-    .hero-copy { padding:24px; background:#f7fbff; }
-    h1,h2,h3 { color:#174a7c; margin:0 0 12px; }
-    h1 { font-size:32px; }
-    h2 { font-size:24px; margin-top:28px; margin-bottom:16px; }
-    h3 { font-size:20px; margin-top:18px; }
-    p { margin: 0 0 14px; }
-    .lead { font-size:18px; color:#2b3e50; }
-    .pill { display:inline-block; background:#e7f2ff; color:#174a7c; padding:8px 12px; border-radius:999px; margin:4px 8px 4px 0; font-weight:bold; font-size:13px; }
-    .cta { display:inline-block; background:#1769aa; color:#fff !important; padding:12px 20px; text-decoration:none; border-radius:8px; font-weight:bold; margin:8px 10px 0 0; }
-    .cta-secondary { background:#28a745; }
-    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
-    .card { padding:20px; background:transparent; }
-    .feature-list { columns:2; -webkit-columns:2; -moz-columns:2; margin:0; padding-left:18px; }
-    .feature-list li, .checklist li { margin-bottom:8px; }
-    .checklist { margin:0; padding-left:18px; }
-    .image-card { border:1px solid #d9e2ec; border-radius:12px; overflow:hidden; background:#fff; }
-    .image-card img { width:100%; display:block; }
-    .caption { padding:12px 16px; font-size:14px; color:#536171; }
-    .contact { background:transparent; color:#243447; border-radius:12px; padding:20px 0; }
-    .contact a { color:#1769aa; text-decoration:none; }
-    .contact p { margin:0 0 10px; }
-    .small { font-size:14px; color:#536171; }
-    @media (max-width: 760px) {
-      .grid2 { grid-template-columns:1fr; }
-      .feature-list { columns:1; }
-      h1 { font-size:28px; }
-    }
-  </style>
 </head>
-<body>
-  <div class="wrap">
-    <div class="hero">
-      <img src="payment_hero.png" alt="Cloud9 payment gateway for Odoo POS"/>
-      <div class="hero-copy">
-        <h1>Cloud9 Payment Gateway for Odoo POS</h1>
-        <p class="lead">Accept payments in-store, online, and remotely with a processor-agnostic gateway built for flexibility, visibility, and scale.</p>
-        <p><strong>Works with Odoo Community Edition.</strong> No Odoo Enterprise dependency required.</p>
+<body style="margin:0; padding:0; background:#ffffff; color:#243447; font-family:Arial, Helvetica, sans-serif; line-height:1.6;">
 
-        <div>
-          <span class="pill">Odoo 18 Community Ready</span>
-          <span class="pill">Processor Agnostic</span>
-          <span class="pill">POS + Portal + Remote Pay</span>
-          <span class="pill">Enterprise Features</span>
+  <div style="max-width:960px; margin:0 auto; padding:20px;">
+
+    <div style="border:1px solid #d7e3ef; border-radius:10px; overflow:hidden; background:#ffffff; margin-bottom:24px;">
+      <img src="payment_hero.png" alt="Cloud9 payment gateway for Odoo POS" style="width:100%; display:block;"/>
+      <div style="padding:24px; background:#f4f8fc; border-top:1px solid #d7e3ef;">
+        <h1 style="margin:0 0 12px; font-size:34px; line-height:1.2; color:#123b63;">Cloud9 Payment Gateway for Odoo POS</h1>
+        <p style="margin:0 0 14px; font-size:18px; color:#2e4358;">Accept payments in-store, online, and remotely with a processor-agnostic gateway built for flexibility, visibility, and scale.</p>
+        <p style="margin:0 0 16px; font-size:15px;"><strong>Works with Odoo Community Edition.</strong> No Odoo Enterprise dependency required.</p>
+
+        <div style="margin-top:12px;">
+          <span style="display:inline-block; margin:0 8px 8px 0; padding:8px 12px; font-size:13px; font-weight:bold; color:#174a7c; background:#e8f2fb; border:1px solid #c9dff2; border-radius:20px;">Odoo 18 Community Ready</span>
+          <span style="display:inline-block; margin:0 8px 8px 0; padding:8px 12px; font-size:13px; font-weight:bold; color:#174a7c; background:#e8f2fb; border:1px solid #c9dff2; border-radius:20px;">Processor Agnostic</span>
+          <span style="display:inline-block; margin:0 8px 8px 0; padding:8px 12px; font-size:13px; font-weight:bold; color:#174a7c; background:#e8f2fb; border:1px solid #c9dff2; border-radius:20px;">POS + Portal + Remote Pay</span>
+          <span style="display:inline-block; margin:0 8px 8px 0; padding:8px 12px; font-size:13px; font-weight:bold; color:#174a7c; background:#e8f2fb; border:1px solid #c9dff2; border-radius:20px;">Enterprise Features</span>
         </div>
 
-        <div style="margin-top:16px;">
-          <a class="cta" href="odoo-demo://launch/pos_cloud9">Try Demo</a>
-          <a class="cta cta-secondary" href="odoo-demo://launch/pos_cloud9">Request Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid2">
-      <div class="card">
-        <h2>Why install this module?</h2>
-        <ul class="checklist">
-          <li>Connect Odoo POS to the Cloud9 payment gateway.</li>
-          <li>Bring your existing processor, or let us help you get one.</li>
-          <li>Support in-person, portal, and one-time remote payment workflows.</li>
-          <li>Give staff a familiar CreditLine-style experience with strong back-office visibility.</li>
-          <li>Use it with <strong>Odoo Community Edition</strong> for a practical payment stack without Enterprise requirements.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>Processor flexibility</h2>
-        <p>Cloud9 describes its gateway as <strong>processor agnostic</strong> and publishes support for major processors including Chase Paymentech, Elavon, Global Payments, Heartland Payment Systems, NUVEI, TSYS, TransFirst, Vantiv, USAT, and WorldPay in the USA, plus NUVEI, TSYS, and Global in Canada.</p>
-        <p class="small">Support options and processor availability can vary by setup and region.</p>
-      </div>
-    </div>
-
-    <h2>Odoo Apps optimized. Enterprise ready.</h2>
-    <div class="card">
-      <ul class="feature-list">
-        <li>Level 2 &amp; Level 3 processing support</li>
-        <li>Tip, Adjust, Verify, and Partial Auth workflows</li>
-        <li>Terminal Capture</li>
-        <li>Tokenization</li>
-        <li>Encryption</li>
-        <li>Hierarchical Control</li>
-        <li>Advanced Filtering</li>
-        <li>Human Centric design</li>
-        <li>Next Gen Front End</li>
-        <li>Popular CreditLine UX</li>
-        <li>Multi-Business Service</li>
-        <li>Chain / Franchise support</li>
-        <li>Multi-Region support</li>
-        <li>Exhaustive Data Visibility</li>
-      </ul>
-    </div>
-
-    <h2>Included business tools</h2>
-    <div class="grid2">
-      <div class="image-card">
-        <img src="main_dashboard.png" alt="Cloud9 transaction dashboard"/>
-        <div class="caption"><strong>Back-office visibility:</strong> review transactions, statuses, and detailed payment data from a Cloud9-style dashboard.</div>
-      </div>
-      <div class="image-card">
-        <img src="member_portal.png" alt="Cloud9 member portal and one-time payment screen"/>
-        <div class="caption"><strong>Member Portal &amp; virtual payments:</strong> securely collect payments through a hosted portal or one-time payment page.</div>
-      </div>
-    </div>
-
-    <div class="grid2" style="margin-top:24px;">
-      <div class="card">
-        <h3>Member Portal Video</h3>
-        <p>The Cloud9 Gateway includes a Member Portal that can be added to an email or website by linking it to a merchant account configured on the gateway. This gives merchants a secure way to collect and manage payments online.</p>
-        <p>A one-time virtual payment page can also be sent by email for remote payment collection. When a payment is captured, the merchant can receive an email notification for immediate visibility.</p>
-      </div>
-      <div class="card">
-        <h3>Free merchant account evaluation</h3>
-        <p>Not sure whether you are getting the best processing rates? Send us a recent merchant statement and we will provide a free, no-obligation evaluation that shows where you may be able to save money or improve your setup.</p>
-        <p class="small">Works from phone, tablet, or desktop.</p>
-        <p style="text-align:center; margin-top:16px;">
-          <img src="qr_code.png" alt="QR code for free merchant account evaluation form" style="max-width:100px; width:100px; height:auto; border:1px solid #d9e2ec; padding:5px; background:#fff; border-radius:4px;"/>
+        <p style="margin:14px 0 0; font-size:14px; color:#607284;">
+          For setup assistance, processor questions, or onboarding help, contact
+          <a href="mailto:support@creditlinets.com" style="color:#1769aa; text-decoration:none; font-weight:bold;">support@creditlinets.com</a>.
         </p>
       </div>
     </div>
 
-    <h2>Support</h2>
-    <div class="contact">
-      <p><strong>Creditline Technical Support</strong></p>
-      <p>Email: <a href="mailto:support@creditlinets.com">support@creditlinets.com</a></p>
-      <p>Phone: <a href="tel:8136003225">813-600-3225</a></p>
+    <table style="width:100%; border-collapse:separate; border-spacing:0 20px;">
+      <tr>
+        <td style="width:50%; vertical-align:top; padding-right:10px;">
+          <div style="border:1px solid #d7e3ef; border-radius:10px; overflow:hidden; background:#ffffff;">
+            <div style="padding:14px 18px; background:#f4f8fc; border-bottom:1px solid #d7e3ef;">
+              <h2 style="margin:0; font-size:26px; color:#123b63;">Why install this module?</h2>
+            </div>
+            <div style="padding:18px;">
+              <ul style="margin:0; padding-left:20px; font-size:15px;">
+                <li style="margin-bottom:8px;">Connect Odoo POS to the Cloud9 payment gateway.</li>
+                <li style="margin-bottom:8px;">Bring your existing processor, or let us help you get one.</li>
+                <li style="margin-bottom:8px;">Support in-person, portal, and one-time remote payment workflows.</li>
+                <li style="margin-bottom:8px;">Give staff a familiar CreditLine-style experience with strong back-office visibility.</li>
+                <li style="margin-bottom:0;">Use it with <strong>Odoo Community Edition</strong> without Enterprise requirements.</li>
+              </ul>
+            </div>
+          </div>
+        </td>
+
+        <td style="width:50%; vertical-align:top; padding-left:10px;">
+          <div style="border:1px solid #d7e3ef; border-radius:10px; overflow:hidden; background:#ffffff;">
+            <div style="padding:14px 18px; background:#f4f8fc; border-bottom:1px solid #d7e3ef;">
+              <h2 style="margin:0; font-size:26px; color:#123b63;">Processor flexibility</h2>
+            </div>
+            <div style="padding:18px;">
+              <p style="margin:0 0 14px; font-size:15px;">Cloud9 is processor agnostic and supports a broad range of processors across the U.S. and Canada, giving merchants flexibility without locking them into a single provider.</p>
+              <p style="margin:0; font-size:13px; color:#607284;">Processor availability can vary by setup, region, and merchant configuration.</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <div style="border:1px solid #d7e3ef; border-radius:10px; overflow:hidden; background:#ffffff; margin-bottom:24px;">
+      <div style="padding:14px 18px; background:#f4f8fc; border-bottom:1px solid #d7e3ef;">
+        <h2 style="margin:0; font-size:26px; color:#123b63;">Odoo Apps optimized. Enterprise ready.</h2>
+      </div>
+      <div style="padding:18px;">
+        <table style="width:100%; border-collapse:collapse;">
+          <tr>
+            <td style="width:50%; vertical-align:top; padding-right:20px;">
+              <ul style="margin:0; padding-left:20px; font-size:15px;">
+                <li style="margin-bottom:8px;">Level 2 &amp; Level 3 processing support</li>
+                <li style="margin-bottom:8px;">Tip, Adjust, Verify, and Partial Auth workflows</li>
+                <li style="margin-bottom:8px;">Terminal Capture</li>
+                <li style="margin-bottom:8px;">Tokenization</li>
+                <li style="margin-bottom:8px;">Encryption</li>
+                <li style="margin-bottom:8px;">Hierarchical Control</li>
+                <li style="margin-bottom:8px;">Advanced Filtering</li>
+              </ul>
+            </td>
+            <td style="width:50%; vertical-align:top; padding-left:20px;">
+              <ul style="margin:0; padding-left:20px; font-size:15px;">
+                <li style="margin-bottom:8px;">Human Centric design</li>
+                <li style="margin-bottom:8px;">Next Gen Front End</li>
+                <li style="margin-bottom:8px;">Popular CreditLine UX</li>
+                <li style="margin-bottom:8px;">Multi-Business Service</li>
+                <li style="margin-bottom:8px;">Chain / Franchise support</li>
+                <li style="margin-bottom:8px;">Multi-Region support</li>
+                <li style="margin-bottom:0;">Exhaustive Data Visibility</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
+
+    <div style="border:1px solid #d7e3ef; border-radius:10px; overflow:hidden; background:#ffffff; margin-bottom:24px;">
+      <div style="padding:14px 18px; background:#f4f8fc; border-bottom:1px solid #d7e3ef;">
+        <h2 style="margin:0; font-size:26px; color:#123b63;">Included business tools</h2>
+      </div>
+      <div style="padding:18px;">
+        <table style="width:100%; border-collapse:separate; border-spacing:0;">
+          <tr>
+            <td style="width:50%; vertical-align:top; padding-right:10px;">
+              <div style="border:1px solid #d7e3ef; border-radius:8px; overflow:hidden; background:#ffffff;">
+                <img src="main_dashboard.png" alt="Cloud9 transaction dashboard" style="width:100%; display:block;"/>
+                <div style="padding:12px 14px; font-size:14px; color:#4b5f73; border-top:1px solid #d7e3ef; background:#fafcff;">
+                  <strong>Back-office visibility:</strong> review transactions, statuses, and detailed payment data from a Cloud9-style dashboard.
+                </div>
+              </div>
+            </td>
+            <td style="width:50%; vertical-align:top; padding-left:10px;">
+              <div style="border:1px solid #d7e3ef; border-radius:8px; overflow:hidden; background:#ffffff;">
+                <img src="member_portal.png" alt="Cloud9 member portal and one-time payment screen" style="width:100%; display:block;"/>
+                <div style="padding:12px 14px; font-size:14px; color:#4b5f73; border-top:1px solid #d7e3ef; background:#fafcff;">
+                  <strong>Member Portal &amp; virtual payments:</strong> securely collect payments through a hosted portal or one-time payment page.
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <table style="width:100%; border-collapse:separate; border-spacing:0 20px;">
+      <tr>
+        <td style="width:50%; vertical-align:top; padding-right:10px;">
+          <div style="border:1px solid #d7e3ef; border-radius:10px; overflow:hidden; background:#ffffff;">
+            <div style="padding:14px 18px; background:#f4f8fc; border-bottom:1px solid #d7e3ef;">
+              <h3 style="margin:0; font-size:22px; color:#123b63;">Member Portal Video</h3>
+            </div>
+            <div style="padding:18px;">
+              <p style="margin:0 0 14px; font-size:15px;">The Cloud9 Gateway includes a Member Portal that can be linked from email or a website to collect and manage payments securely.</p>
+              <p style="margin:0; font-size:15px;">A one-time virtual payment page can also be shared for remote payment collection, with optional email notifications when payments are captured.</p>
+            </div>
+          </div>
+        </td>
+
+        <td style="width:50%; vertical-align:top; padding-left:10px;">
+          <div style="border:1px solid #d7e3ef; border-radius:10px; overflow:hidden; background:#ffffff;">
+            <div style="padding:14px 18px; background:#f4f8fc; border-bottom:1px solid #d7e3ef;">
+              <h3 style="margin:0; font-size:22px; color:#123b63;">Free merchant account evaluation</h3>
+            </div>
+            <div style="padding:18px;">
+              <p style="margin:0 0 14px; font-size:15px;">Send us a recent merchant statement for a free, no-obligation review to identify possible savings or improvement opportunities.</p>
+              <p style="margin:0 0 14px; font-size:13px; color:#607284;">Works from phone, tablet, or desktop.</p>
+              <p style="margin:0; text-align:center;">
+                <img src="qr_code.png" alt="QR code for free merchant account evaluation form" style="max-width:130px; width:100%; height:auto; border:1px solid #d7e3ef; border-radius:8px; background:#ffffff; padding:8px;"/>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <div style="border:1px solid #d7e3ef; border-radius:10px; background:#f8fbfe; padding:20px;">
+      <h2 style="margin:0 0 12px; font-size:26px; color:#123b63;">Support</h2>
+      <p style="margin:0 0 10px; font-size:15px;"><strong>Creditline Technical Support</strong></p>
+      <p style="margin:0 0 10px; font-size:15px;">
+        Email:
+        <a href="mailto:support@creditlinets.com" style="color:#1769aa; text-decoration:none; font-weight:bold;">support@creditlinets.com</a>
+      </p>
+      <p style="margin:0; font-size:15px;">
+        Phone:
+        <a href="tel:8136003225" style="color:#1769aa; text-decoration:none; font-weight:bold;">813-600-3225</a>
+      </p>
+    </div>
+
   </div>
 </body>
 </html>
